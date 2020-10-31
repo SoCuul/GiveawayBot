@@ -1,0 +1,19 @@
+{
+    "token": "Bot Token",
+    "giveawayRole": "Giveaway Role",
+    "mainGiveawayChannelName": "giveaways",
+    "ownerID": "Bot Owner ID",
+
+    "everyoneMention": false,
+    "hostedBy": true,
+    "botsCanWin": false,
+
+    "prefix": "!g",
+
+    "embedColor": "#1abc9c",
+    "embedColorEnd": "#2f3136",
+    "reaction": "🎉",
+    "giveawayEmoji": "🎉",
+
+    "botName": "GiveawayBot"
+}

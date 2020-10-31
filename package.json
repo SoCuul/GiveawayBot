@@ -1,0 +1,16 @@
+{
+  "name": "giveawaybot",
+  "version": "1.0.0",
+  "description": "A simple and customizable self-hosted giveaway bot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SoCuul",
+  "license": "ISC",
+  "dependencies": {
+    "discord-giveaways": "^4.2.1",
+    "discord.js": "^12.4.1",
+    "ms": "^2.1.2"
+  }
+}
