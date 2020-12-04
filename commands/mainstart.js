@@ -54,7 +54,7 @@ exports.run = async (client, message, args) => {
             giveawayEnded: (client.config.everyoneMention ? "@everyone\n\n" : "")+ client.config.giveawayEmoji + "**GIVEAWAY ENDED**" + client.config.giveawayEmoji,
             timeRemaining: "Time remaining: **{duration}**!",
             inviteToParticipate: "React with " + client.config.giveawayEmoji + " to participate!",
-            winMessage: "<a:Giveaway:764552166576095232> {winners} won **{prize}**!",
+            winMessage: client.config.giveawayEmoji + " {winners} won **{prize}**!",
             embedFooter: client.config.botName,
             noWinner: "Giveaway cancelled, no valid participations.",
             hostedBy: "Hosted by: {user}",
