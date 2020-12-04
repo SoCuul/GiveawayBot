@@ -1,6 +1,7 @@
 const ms = require('ms');
 
 exports.run = async (client, message, args) => {
+    const tick = '`'
 
     // If the member doesn't have enough permissions
     if(!message.member.roles.cache.some((r) => r.name === client.config.giveawayRole)){
@@ -9,12 +10,8 @@ exports.run = async (client, message, args) => {
 
     // Giveaway channel
     const giveawayChannel = message.guild.channels.cache.find(channel => channel.name === client.config.mainGiveawayChannelName);
-    //let giveawayChannel = message.mentions.channels.first();
-    //message.channel.send(`gc:` + giveawayChannel)
-    // If no channel is mentionned
-    //if(!giveawayChannel){
-    //    return message.channel.send(':x: You have to mention a valid channel!');
-    //}
+    // If no channel is FOUND
+    if(!giveawayChannel) return message.channel.send(`:x: You have to have a channel named ${tick}#${client.config.mainGiveawayChannelName}${tick} to use this command.`)
 
     // Giveaway duration
     let giveawayDuration = args[0];
