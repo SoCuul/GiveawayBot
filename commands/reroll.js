@@ -21,21 +21,25 @@ exports.run = async (client, message, args) => {
 
     // If no giveaway was found
     if(!giveaway){
-        return message.channel.send('Unable to find a giveaway for `'+ args.join(' ') +'`.');
+        message.channel.send(`:x: No giveaway found for \`${messageID}\`, please check you have the right message and try again.`);
     }
 
     // Reroll the giveaway
-    client.giveawaysManager.reroll(giveaway.messageID)
+    client.giveawaysManager.reroll(giveaway.messageID, {
+        messages: {
+            congrat: client.config.giveawayEmoji + 'New winner(s) : {winners}! Congratulations!'
+        }
+    })
     .then(() => {
         // Success message
-        message.channel.send('Giveaway rerolled!');
+        message.channel.send('✅ Giveaway rerolled!');
     })
     .catch((e) => {
         if(e.startsWith(`Giveaway with message ID ${giveaway.messageID} is not ended.`)){
             message.channel.send('This giveaway is not ended!');
         } else {
             console.error(e);
-            message.channel.send('An error occured...');
+            message.channel.send(':x: There was an error');
         }
     });
 

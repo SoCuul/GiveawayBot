@@ -13,9 +13,9 @@ exports.run = async (client, message, args) => {
 
     let messageID = args[0];
         client.giveawaysManager.delete(messageID).then(() => {
-            message.channel.send("Success! Giveaway deleted!");
+            message.channel.send("✅ Giveaway deleted!");
         }).catch((err) => {
-            message.channel.send("No giveaway found for "+messageID+", please check and try again");
+            message.channel.send(":x: No giveaway found for \`${messageID}\`, please check you have the right message and try again.");
         });
 
 };

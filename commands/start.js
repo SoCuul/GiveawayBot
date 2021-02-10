@@ -26,6 +26,9 @@ exports.run = async (client, message, args) => {
     // If the specified number of winners is not a number
     if(isNaN(giveawayNumberWinners) || (parseInt(giveawayNumberWinners) <= 0)){
         return message.channel.send(':x: You have to specify a valid number of winners!');
+    }else
+    if(giveawayNumberWinners > 10){
+        return message.channel.send(':x: You must have less than 10 winners!');
     }
 
     // Giveaway prize
@@ -48,8 +51,8 @@ exports.run = async (client, message, args) => {
         hostedBy: client.config.hostedBy ? message.author : null,
         // Messages
         messages: {
-            giveaway: (client.config.everyoneMention ? "@everyone\n\n" : "")+ client.config.giveawayEmoji + "**GIVEAWAY**" + client.config.giveawayEmoji,
-            giveawayEnded: (client.config.everyoneMention ? "@everyone\n\n" : "")+ client.config.giveawayEmoji + "**GIVEAWAY ENDED**" + client.config.giveawayEmoji,
+            giveaway: (client.config.everyoneMention ? "@everyone\n\n" : "")+ client.config.giveawayEmoji + "** GIVEAWAY **" + client.config.giveawayEmoji,
+            giveawayEnded: (client.config.everyoneMention ? "@everyone\n\n" : "")+ client.config.giveawayEmoji + "** GIVEAWAY ENDED **" + client.config.giveawayEmoji,
             timeRemaining: "Time remaining: **{duration}**!",
             inviteToParticipate: "React with " + client.config.giveawayEmoji + " to participate!",
             winMessage: client.config.giveawayEmoji + " {winners} won **{prize}**!",
@@ -68,6 +71,6 @@ exports.run = async (client, message, args) => {
         }
     });
 
-    message.channel.send(`Giveaway started!`);
+    message.channel.send(`${client.config.giveawayEmoji} Giveaway started in <#${giveawayChannel.id}>`);
 
 };

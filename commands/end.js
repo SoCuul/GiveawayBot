@@ -21,7 +21,7 @@ exports.run = async (client, message, args) => {
 
     // If no giveaway was found
     if(!giveaway){
-        return message.channel.send('Unable to find a giveaway for `'+ args.join(' ') + '`.');
+        return message.channel.send(':x: Unable to find a giveaway for `'+ args.join(' ') + '`.');
     }
 
     // Edit the giveaway
@@ -31,14 +31,14 @@ exports.run = async (client, message, args) => {
     // Success message
     .then(() => {
         // Success message
-        message.channel.send('Giveaway will end in less than '+(client.giveawaysManager.options.updateCountdownEvery/1000)+' seconds...');
+        message.channel.send('✅ Giveaway will end in less than '+(client.giveawaysManager.options.updateCountdownEvery/1000)+' seconds...');
     })
     .catch((e) => {
         if(e.startsWith(`Giveaway with message ID ${giveaway.messageID} is already ended.`)){
-            message.channel.send('This giveaway is already ended!');
+            message.channel.send('This giveaway has already ended!');
         } else {
             console.error(e);
-            message.channel.send('An error occured...');
+            message.channel.send(':x: There was an error');
         }
     });
 
