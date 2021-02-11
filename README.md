@@ -47,10 +47,10 @@ Run start.bat or start.sh (depending what platform you're on) and the bot should
 * `create` Creates a giveaway using the interactive wizard.
 * `start [channel] [duration] [winners] [prize]` Manually starts a giveaway.
 * `list` Lists the current giveaways.
-* `reroll` [message id] Rerolls a giveaway winner.
-* `edit` [message id] [prize/winners] [new value] Edits an ongoing giveaway.
-* `end` [message id] Ends a giveaway early.
-* `delete` [message id] Deletes the giveaway message and removes it from the database.
+* `reroll [message id]` Rerolls a giveaway winner.
+* `edit [message id] [prize/winners] [new value]` Edits an ongoing giveaway.
+* `end [message id]` Ends a giveaway early.
+* `delete [message id]` Deletes the giveaway message and removes it from the database.
 * `restartbot` Restarts the bot.
 
 # Support
