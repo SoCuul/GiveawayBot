@@ -44,6 +44,7 @@ Here's how to configure it (Please replace the tutorial values with your own):
 Run start.bat or start.sh (depending what platform you're on) and the bot should start up! (Note for using the start.sh script, before running it, do `chmod +x start.sh` and then run it with `./start.sh`)
 
 # Commands
+* `help` Shows the command list and info about the bot.
 * `create` Creates a giveaway using the interactive wizard.
 * `start [channel] [duration] [winners] [prize]` Manually starts a giveaway.
 * `list` Lists the current giveaways.
