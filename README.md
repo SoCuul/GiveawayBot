@@ -3,7 +3,7 @@ GiveawayBot is a simple and customizable self-hosted giveaway bot.
 It utilizes [discord-giveaways](https://github.com/Androz2091/discord-giveaways) to create and manage the giveaways.
 
 # How to download
-You should always use the latest version of the bot. You can get the latest version by [clicking this link](https://github.com/SoCuul/GiveawayBot/releases/latest).
+You should always use the latest version of the bot. You can get the download the latest source code by [clicking this link](https://github.com/SoCuul/GiveawayBot/releases/latest).
 
 # Setup
 ## Prerequisites
