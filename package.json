@@ -1,6 +1,6 @@
 {
   "name": "giveawaybot",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A simple and customizable self-hosted giveaway bot.",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,17 @@
     "discord-giveaways": "^4.2.1",
     "discord.js": "^12.4.1",
     "ms": "^2.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoCuul/GiveawayBot.git"
+  },
+  "keywords": [
+    "giveaways",
+    "giveaway-bot" 
+  ],
+  "bugs": {
+    "url": "https://github.com/SoCuul/GiveawayBot/issues"
+  },
+  "homepage": "https://github.com/SoCuul/GiveawayBot#readme"
 }
