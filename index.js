@@ -58,4 +58,9 @@ fs.readdir("./commands/", (_err, files) => {
 });
 
 // Login
-client.login(config.token);
+if (client.config.useENV == true && fs.existsSync('.env')) {
+    require('dotenv').config();
+    client.login(process.env.TOKEN);
+}else{
+    client.login(config.token);
+}
