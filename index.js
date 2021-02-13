@@ -14,7 +14,7 @@ client.giveawaysManager = new GiveawaysManager(client, {
     default: {
         botsCanWin: config.botsCanWin,
         embedColor: config.embedColor,
-        embedColorEnd: config.embedColor,
+        embedColorEnd: config.embedColorEnd,
         reaction: config.reaction
     }
 });
