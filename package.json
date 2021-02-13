@@ -4,6 +4,7 @@
   "description": "A simple and customizable self-hosted giveaway bot.",
   "main": "index.js",
   "scripts": {
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "SoCuul",
