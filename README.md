@@ -44,7 +44,7 @@ Here's how to configure it (Please replace the tutorial values with your own):
 Run start.bat or start.sh (depending what platform you're on) and the bot should start up! (Note for using the start.sh script, before running it, do `chmod +x start.sh` and then run it with `./start.sh`)
 
 ## Hosting on repl.it [![Run on Repl.it](https://repl.it/badge/github/socuul/giveawaybot)](https://repl.it/github/socuul/giveawaybot)
-After you've clicked the **Run on Repl.it** button, install the `dotenv` npm package.
+After you've clicked the **Run on Repl.it** button, make sure that the `dotenv` npm package is installed.
 
 You will now need to replace the token line in the `config.json` file:
 #### Old Line
