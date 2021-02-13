@@ -43,6 +43,26 @@ Here's how to configure it (Please replace the tutorial values with your own):
 ## Running the bot
 Run start.bat or start.sh (depending what platform you're on) and the bot should start up! (Note for using the start.sh script, before running it, do `chmod +x start.sh` and then run it with `./start.sh`)
 
+## Hosting on repl.it [![Run on Repl.it](https://repl.it/badge/github/socuul/giveawaybot)](https://repl.it/github/socuul/giveawaybot)
+After you've clicked the **Run on Repl.it** button, install the `dotenv` npm package.
+
+You will now need to replace the token line in the `config.json` file:
+#### Old Line
+```json
+"token": "This is where you put your bot token",
+```
+#### New Line
+```json
+"useENV": true,
+```
+
+After you've done this, create a new file called `.env` and put the following text inside it:
+```
+TOKEN=putyourtokenhere
+```
+
+Now, you can run the bot on **repl.it** without worrying about your token being stolen.
+
 # Commands
 * `help` Shows the command list and info about the bot.
 * `create` Creates a giveaway using the interactive wizard.
@@ -55,4 +75,6 @@ Run start.bat or start.sh (depending what platform you're on) and the bot should
 * `restartbot` Restarts the bot.
 
 # Support
-If you need help with this bot, join my [support server](https://discord.gg/AY7WHt4Nrw).
+### Join my Discord Server for help with the bot.
+
+<a href="https://discord.gg/AY7WHt4Nrw"><img src="https://discordapp.com/api/guilds/774121617240358932/widget.png?style=banner2"></a>
