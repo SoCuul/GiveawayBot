@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "discord-giveaways": "^4.2.1",
-    "discord.js": "^12.4.1",
+    "discord.js": "^12.5.2",
     "ms": "^2.1.2"
   },
   "repository": {
@@ -20,7 +20,7 @@
   },
   "keywords": [
     "giveaways",
-    "giveaway-bot" 
+    "giveaway-bot"
   ],
   "bugs": {
     "url": "https://github.com/SoCuul/GiveawayBot/issues"
