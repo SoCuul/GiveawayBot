@@ -1,6 +1,6 @@
 {
   "name": "giveawaybot",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "A simple and customizable self-hosted giveaway bot.",
   "main": "index.js",
   "scripts": {
