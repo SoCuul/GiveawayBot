@@ -20,7 +20,7 @@ Here's how to configure it (Please replace the tutorial values with your own):
 ```json
 {
     "token": "This is where you put your bot token",
-    "giveawayRole": "Please enter the role that is needed to create/manage giveaways",
+    "giveawayRole": "Please enter the role name that is needed to create/manage giveaways",
     "ownerID": "Please enter the ID of the bot owner (this user can restart the bot)",
 
     "everyoneMention": false,
