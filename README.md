@@ -1,3 +1,6 @@
+# Deprecated
+Unfortunately, I've lost motivation to work on this bot. At this point, it's so ill-maintained that it would take more work than it's worth to update it, which I don't have the motivation to do.
+
 # GiveawayBot
 GiveawayBot is a simple and customizable self-hosted giveaway bot.
 It utilizes [discord-giveaways](https://github.com/Androz2091/discord-giveaways) to create and manage the giveaways.
